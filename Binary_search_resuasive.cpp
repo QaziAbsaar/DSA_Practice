@@ -24,15 +24,18 @@ int binarySearchRecursive(int arr[], int left, int right, int target) {
 }
 
 int main() {
+    // Array
     int arr[] = {1, 2, 4, 7, 9, 12, 15};
+    // Size of array
     int n = sizeof(arr) / sizeof(arr[0]);
+    //element to find
     int target = 9;
-    
+    // calling the function and store the result in variable
     int result = binarySearchRecursive(arr, 0, n - 1, target);
     
-    if (result != -1)
+    if (result != -1)//if element is found in array
         cout << "Element found at index " << result << endl;
-    else
+    else // if element is not found in array
         cout << "Element not found in the array" << endl;
 
     return 0;
